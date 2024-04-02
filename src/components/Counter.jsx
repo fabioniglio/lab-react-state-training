@@ -8,7 +8,7 @@ function Counter() {
       <button
         className="counterButton"
         onClick={() => {
-          setCounter(counter - 1);
+          if (counter > 0) setCounter(counter - 1);
         }}
       >
         <p>-</p>
